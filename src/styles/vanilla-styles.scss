@@ -1,0 +1,515 @@
+/* colours:
+Dark/ text: #333 
+header: silver
+container bg: #eee
+*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap'); */
+/******* Generic and container rules *********/
+
+html {
+  
+  color: #333;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* body {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1b1f21;
+} */
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #04589b; 
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+header {
+  width: 100%;
+  min-height: 60px;
+  /* background: silver; */
+}
+
+.container {
+  background: #fcf9f2;
+  /* width: 320px; */
+  margin: 0 auto;
+  position: relative;
+}
+
+main {
+  padding: 0 10px 0 10px;
+}
+
+/******* Form field molecules general rules *********/
+
+input,
+textarea,
+select,
+label,
+button {
+  font-size: 16px;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  padding: 5px;
+}
+
+button {
+  padding: 0 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  line-height: 30px;
+  border-radius: 3px;
+}
+
+button:hover {
+  border: 1px #333 solid;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.qwrap-text label,
+.qwrap-select label,
+.qwrap-revealer label {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.errorMessage {
+  margin-top: 16px;
+  padding: 8px;
+  border: 1px solid #e03a3e;
+  border-radius: 3px;
+  color: #e03a3e;
+}
+
+.successMessage {
+  margin-top: 16px;
+  padding: 8px;
+  border: 1px solid #189138;
+  border-radius: 3px;
+  color: #189138;
+}
+
+.page-head-wrap {
+  padding: 20px 0 20px 0;
+  position: relative;
+}
+
+.page-head-wrap h1 {
+  margin: 0 10px 0 10px;
+}
+
+.fake-btn-block {
+  text-align: center;
+  width: 93%;
+  border: 1px solid #eee;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/******* Form field wrappers *********/
+
+.questionsWrapper,
+h1 {
+  max-width: 960px;
+  /* margin: 0.67em auto; */
+  margin: 0 auto;
+}
+
+.questionsWrapper {
+  background: #fff;
+  padding-bottom: 10px;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 1px 1px 2px 1px rgba(0,0,0,0.09);
+  border-radius: 8px;
+}
+
+.questionsWrapper > h3{
+  margin-left: 10px;
+}
+
+.builder-wrapper>.questions-wrapper {
+  padding: 8px 8px 16px 8px;
+}
+
+.qwrap {
+  border-bottom: 1px solid #eee;
+  padding: 20px 10px 20px 10px;
+}
+
+.questions-wrapper .qwrap:last-child {
+  border-bottom: none;
+}
+
+.qwrap .qwrap {
+  border-bottom: none;
+  padding: 20px 0px 20px 0px;
+}
+
+.licence .inline-form-field {
+  margin: 10px 0 10px 0;
+}
+
+.inline-form-field,
+.datewrap {
+  display: flex;
+  align-items: center;
+}
+
+.datewrap #DOB-day,
+.datewrap #DOB-month,
+.datewrap #startDate-day,
+.datewrap #startDate-month {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.datewrap #DOB-year,
+.datewrap #startDate-year {
+  max-width: 80px;
+}
+
+.image-wrap {
+  width: 320px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+.image-wrap img {
+  width: 100%;
+}
+
+.questions-wrapper .link {
+  margin-left: 16px;
+  font-weight: 700;
+}
+
+.inline-text {
+  display: flex;
+  align-items: center;
+}
+
+.inline-text p {
+  margin-right: 8px;
+}
+
+/******* Radio buttons group rules *********/
+
+.inline-radio-group input[type="radio"] {
+  display: none;
+}
+
+.inline-radio-group div {
+  display: inline-block;
+}
+
+.inline-radio-group label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 1px #eee solid;
+  border-radius: 3px;
+}
+
+.numbers label {
+  margin-right: -1px;
+}
+
+.inline-radio-group label:hover {
+  border: 1px #333 solid;
+}
+
+.inline-radio-group input[type="radio"]:checked + label {
+  background: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+/******* Radiolist *********/
+input[type="radio"] {
+  z-index: 301;
+  transform: translateY(-3px);
+}
+
+input[type="radio"]:hover {
+  border: 1px #333 solid;
+}
+
+input[type="radio"]:checked + label {
+  background: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/******* Checkbox rules *********/
+
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrap label {
+  margin-bottom: 0;
+  margin-left: -25px;
+  padding-left: 30px;
+  width: 100%;
+  line-height: 40px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  z-index: 300;
+  margin-left: 10px;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+  background: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.checkbox-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #333;
+}
+
+/******* Pepopulated questioins *********/
+
+.prepop-questions {
+  padding: 20px 10px 20px 10px;
+}
+
+.prepop-wrap {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* align-items: center; */
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.prepop-wrap select {
+  max-height: 21px;
+  display: inline-block;
+}
+
+.prepop-wrap * {
+  margin: 0 10px 0 0;
+}
+
+.prepop-wrap *:first-child {
+  margin-left: 0; 
+}
+
+/******* Footer rules *********/
+footer {
+  min-height: 60px;
+  padding: 20px 10px;
+  background: #fff;
+  margin-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.navrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.saverow {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/******* navbutton rules *********/
+
+.primary {
+  background-color: #333;
+  color: #fff;
+}
+
+.disabled {
+  color: #333;
+  background-color: #eee;
+  border: none;
+}
+
+.disabled:hover {
+  border: none;
+}
+
+.btn-block {
+  display: block;
+  width: 93%;
+  margin: 10px;
+}
+
+/******************************************CAR***********************************/
+
+.builder-wrapper {
+  padding: 20px 16px;
+}
+
+.add-car {
+  position:relative;
+  margin-top: 16px;
+}
+
+.licenceno {
+  margin-right: 10px;
+}
+
+.policy-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 1px 1px 2px 1px rgba(0,0,0,0.09);
+  padding: 8px 0 0 0;
+  margin-top: 16px;
+}
+
+.driver-name {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.driver-name p {
+  margin: 0 0 0 16px;
+}
+
+.driver-name div {
+  margin-left: 24px;
+}
+
+.driver-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://res.cloudinary.com/lwcqviihu/image/upload/v1570463648/m.cover_complete/driver_icon.svg");
+}
+
+.add-remove {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 16px 0 16px;
+  background: #f7f7f7;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.driver-card {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+  padding: 0 16px 0 16px;
+
+}
+
+.driver-card p {
+  margin: 0 0 0 8px;
+}
+
+.driver-card .link {
+  margin-left: auto;
+}
+
+/******************************************HOME***********************************/
+
+.address-wrap {
+  padding: 8px 16px 0 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+}
+
+.address-wrap .link {
+  margin-left: 0;
+}
+
+.add-item {
+  position: relative;
+}
+
+.item-card {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.item-card .item-type {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.item-card .description-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-value p {
+  margin-bottom: 0;
+  margin-block-end: 0;
+}
+
+.item-card p {
+  margin-top: 0;
+}
+
+.button-link {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: #04589b;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 8px;
+}
+
+.button-link:hover {
+  border: none;
+}
